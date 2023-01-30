@@ -19,4 +19,3 @@ echo $phrase3;
 // http://localhost/php-initiation/jour1/08-exo.php
 
 echo "$phrase1 $phrase2 $phrase3" ;
-
