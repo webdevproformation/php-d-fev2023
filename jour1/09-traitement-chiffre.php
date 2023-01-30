@@ -28,5 +28,5 @@ echo $c + $d ."<br>"; // 70 en PHP mais en JS "3040"
 $f = "40 francs" ;
 echo $e * $f ; */
 
-// modif pour Odile 
+// modif pour malik
 
