@@ -45,3 +45,5 @@ var_dump(false); // bool(false)
 
 // sinon
 // afficher dans le navigateur vous habitez hors d'Ile de France
+
+// rdv 13h30 bon app !!!
