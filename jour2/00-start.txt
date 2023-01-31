@@ -1,0 +1,16 @@
+github : notes de cours :
+https://github.com/webdevproformation/php-d-fev2023
+
+
+support de cours : 
+https://formation.webdevpro.net/php-initiation
+login : php 
+password : initiation
+
+etape 1 => Windows installer XAMPP https://www.apachefriends.org/index.html
+        => MacOS installer MAMP https://www.mamp.info/en/downloads/
+
+extension xdebug (confort mais pas obligatoire)
+https://webdevpro.net/xampp-visual-studio-et-le-module-php-xdebug/
+
+PAS LA PEINE D'INSTALLER XDEBUG !!! (sauf si vous voulez MAIS pas de support de ma part)

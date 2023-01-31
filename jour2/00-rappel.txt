@@ -1,0 +1,36 @@
+
+php pour créer des variables, il faut ajouter un symbole $nomVariable 
+
+// ne pas utiliser const let var comme en javascript, il n'y a pas de mot clé 
+// $nomVariable 
+
+// 5 types 
+
+// string 
+$texte = "coucou les amis";
+$texte = 'comment allez vous ?';
+
+// chiffre
+$score = 120 ; // int integer => chiffre entier 
+$prix = 12.05; // float chiffre à virgule 
+
+// boolean 
+$test = true ;
+$verif = false ;
+$isMineur = 15 > 18 ;
+
+// tableau (array)
+// tableaux indexés (qui ressemblent aux tableaux de javascript)
+$liste = ["lundi", "mardi", "mercredi", "jeudi"] ;
+$liste = [1,2,3,4] ;
+$liste = [false , true, false] ;
+$liste = ["lundi" , 1, false , 0.3] ;
+
+// object 
+// pour créer un objet en PHP il faut au préalable créer une class 
+// l'objet est créer DEPUIS une class
+// l'objet d'une semaine de cours SPECIALE la semaine prochaine
+class Etudiant {}
+$etudiant = new Etudiant();
+
+
