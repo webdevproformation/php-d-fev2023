@@ -32,3 +32,4 @@ a();
 // Alain DOE habite au 75 rue de Paris 75000 Paris près de la tour Eiffel
 
 // exécuter la fonction
+
