@@ -32,3 +32,12 @@ function calcul4(int $a, int $b){ // type hinting
 calcul4(12, 15) ;
 calcul4("text", 15) ; // Fatal error: Uncaught TypeError: calcul4(): Argument #1 ($a) must be of type int, string given,
 
+// créer le fichier 08-exo.php 
+// créer une fonction note 
+// prendre 5 paramètres $a ,$b $c $d et $e
+// les 5 paramètres doivent être de type chiffre entier
+// la fonction permet de trouver la moyenne de 5 notes saisies
+
+// exécuter la fonction avec les valeurs suivantes 
+// 0 10 20 5 15
+// 12 14 15 6 8
