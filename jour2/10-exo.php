@@ -12,3 +12,9 @@ function aireCercle( float $rayon , string $unite ) :string{
 
 echo aireCercle(30 , "cm");
 echo aireCercle(12.4 , "km");
+
+// function a() :int{} // permet dire clairement
+// le type de return de la fonction
+
+// echo == document.querySelector().innerHTML
+// var_dump() == console.log
