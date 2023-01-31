@@ -26,3 +26,22 @@ var_dump(false); // bool(false)
 
 // && condition à gauche et à droite soient SIMULTANEMENT true
 // || une condition soit à gauche soit à droite soit les deux  true
+
+// ---------------
+
+// créer le fichier 04-exo.php
+
+// créer un nouveau fichier php contenant une variable $ville
+// initialiser la variable $ville = "Marseille"
+
+// si $ville a pour valeur Paris 
+// alors afficher dans le navigateur vous habitez à Paris
+
+// si $ville a pour valeur Boulogne ou Clamart ou Montrouge 
+// alors afficher dans le navigateur vous habitez dans le 92
+
+// si $ville a pour valeur Saint-Denis ou Aubervilliers ou Pantin
+//  alors afficher dans le navigateur vous habitez dans le 93
+
+// sinon
+// afficher dans le navigateur vous habitez hors d'Ile de France
