@@ -19,3 +19,7 @@ echo aireCercle(12.4 , "km");
 
 // echo == document.querySelector().innerHTML
 // var_dump() == console.log
+
+// boucle    @for sass
+// condition @if 
+// fonction  @mixin 
