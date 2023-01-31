@@ -26,4 +26,19 @@ $livre = [ // tableau associatif qui contient 5 valeurs
 echo "<p>le site s'appelle : {$livre["nom"]}</p>";
 // remarque intéressant de mettre des { } autour de la variable 
 
-// créer l
+// créer le fichier 12-exo.php
+// créer un tableau associatif
+// nom de la variable serveur
+
+// 5 éléments du tableaux :
+//  source : "c:\"
+// langage HTML
+// protocole http
+// host localhost
+// fichier index.php 
+
+// écrire dans le navigateur les phrases suivantes 
+
+// XAMPP lance un serveur qui écoute l'adresse http://localhost
+// le fichier encourt d'exécution est http://localhost/index.php et il est en HTML
+
