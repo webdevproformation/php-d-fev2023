@@ -24,11 +24,12 @@ if($largeur < 10){
 // initialiser la variable $age = 30
 // si l'age est compris entre 0 et 10
 // alors afficher dans le navigateur vous êtes un enfant
-// si l'age est compris entre 10 inclu et 18
+// si l'age est compris entre 10 inclus et 18
 // alors afficher dans le navigateur vous êtes un ado
 // si l'age est supérieur ou égal à 18 et inférieur ou égal à 120
 //  alors afficher dans le navigateur vous êtes un adulte
 // sinon
 // afficher dans le navigateur l'âge mentionné n'est pas conforme
 
+// rdv 12h00 pour la correction
 */
