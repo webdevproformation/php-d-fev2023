@@ -50,7 +50,7 @@ string => concatenation
 $p1 = "hello" ;
 $p2 = "world" ;
 
-// solution 1 concatenation avec le symbole . 
+// solution 1 concatenation avec le symbole . " " 
 $solution1 = $p1 . " " . $p2 ;
 $solution1 = "hello" . " " . "world" ;
 $solution1 = "hello"." "."world";
@@ -64,7 +64,36 @@ $solution3 = "{$p1} {$p2}" ;
 // solution4 mix des solutions précédentes 
 $solutio4 = "$p1 " . $p2 ;
 
+// rappel en js => const a = "bonjour" + " " + "les amis"
+
 nombre int / float => addition / soustraction / multiplication / division / puissance / modulo
 
+$p1 = 2 ;
+$p2 = 50 ;
+$total1 = $p1 + $p2 ; // addition
+$total2 = $p1 - $p2 ; // soustraction
+$total3 = $p1 * $p2 ; // multiplication
+$total4 = $p1 / $p2 ; // division
+$total5 = $p1 ** $p2 ; // puissance
+$total6 = $p1 % $p2 ; // modulo
 
+$chiffre = "12";
+$total7 = $chiffre + $p2 ; // 62 // php transforme les chiffres entre "" en chiffre 
 
+$phrase = "12 pirates";
+$total8 = $phrase + $p2 ; // 62 // php transforme les textes commençant par des chiffres en chiffre si vous faites un traitement
+
+-----------
+
+traitement sur les booleans 
+
+> < >= <= == === != !==
+&& || ! 
+en plus il existe : AND OR je vous deconseille de les utiliser 
+
+-----------
+
+structures => qui permettent de change l'ordre d'exécution d'une programme (qui est par défaut de haut en bas)
+
+for($i = 0 ; $i < 3 ; $i++ ){
+}
