@@ -43,3 +43,28 @@ class Etudiant {}
 $etudiant = new Etudiant();
 
 
+traitement par type de variable 
+
+string => concatenation 
+
+$p1 = "hello" ;
+$p2 = "world" ;
+
+// solution 1 concatenation avec le symbole . 
+$solution1 = $p1 . " " . $p2 ;
+$solution1 = "hello" . " " . "world" ;
+$solution1 = "hello"." "."world";
+$solution1 = "hello world";
+
+// solution 2 guillemet qui contiennent les variables 
+$solution2 = "$p1 $p2";
+// solution 3 guillemet qui contiennent les variables entourées d'accolades
+$solution3 = "{$p1} {$p2}" ;
+
+// solution4 mix des solutions précédentes 
+$solutio4 = "$p1 " . $p2 ;
+
+nombre int / float => addition / soustraction / multiplication / division / puissance / modulo
+
+
+
