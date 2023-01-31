@@ -41,3 +41,4 @@ for($i = 9 ; $i >= 3 ; $i -= 2){
     $resultat = "5 x $i = " . $i * 5;
     echo "<p>$resultat</p>";
 }
+
