@@ -87,8 +87,8 @@ $total8 = $phrase + $p2 ; // 62 // php transforme les textes commençant par des
 
 traitement sur les booleans 
 
-> < >= <= == === != !==
-&& || ! 
+> < >= <= == === != !== opérateur de comparaison
+&& || !  opérateur boolean
 en plus il existe : AND OR je vous deconseille de les utiliser 
 
 -----------
@@ -97,3 +97,18 @@ structures => qui permettent de change l'ordre d'exécution d'une programme (qui
 
 for($i = 0 ; $i < 3 ; $i++ ){
 }
+
+// dans le dossier jour2 créer le fichier 01-exo.php 
+afficher dans la page web les chaines de caractères suivantes 
+
+3 x 6 = 18
+3 x 9 = 27 
+3 x 12 = 36 
+
+et aussi 
+
+5 x 9 = 45 
+5 x 7 = 35
+5 x 5 = 25
+5 x 3 = 15
+=> pour cela vous devez réaliser 2 boucles for 
