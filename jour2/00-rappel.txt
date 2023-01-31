@@ -4,7 +4,7 @@ php pour créer des variables, il faut ajouter un symbole $nomVariable
 // ne pas utiliser const let var comme en javascript, il n'y a pas de mot clé 
 // $nomVariable 
 
-// 5 types 
+// 7 types 
 
 // string 
 $texte = "coucou les amis";
@@ -25,6 +25,15 @@ $liste = ["lundi", "mardi", "mercredi", "jeudi"] ;
 $liste = [1,2,3,4] ;
 $liste = [false , true, false] ;
 $liste = ["lundi" , 1, false , 0.3] ;
+
+// tableau associatif
+$formation = [
+    "nom" => "Formation DSD", // "key" => "value"
+    "duree" => 2 ,            // "clé" => "valeur"
+    "unite" => "mois",        // "clé" => "valeur"
+    "adresse" => "distanciel" // "clé" => "valeur"
+];
+
 
 // object 
 // pour créer un objet en PHP il faut au préalable créer une class 
