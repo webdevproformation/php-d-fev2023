@@ -44,4 +44,5 @@ $total = ltrim(information(1, false, "element1"));
 // exécuter cette fonction avec les paramètres suivants 
 // 30  ,cm
 // 12.4 , km  
+// **
 
