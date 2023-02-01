@@ -53,19 +53,18 @@ for($i = 0 ; $i < count($etudiants) ; $i++){
 // créer le fichier 04-exo.php 
 // créer une variable qui s'appelle villes qui est de type tableau indexé
 // ce tableau contient 2 tableaux associatifs 
-[
+/* [
     nom Paris
     nbHabitant : 5_000_000
     arrondissements : 20 ,
     monuments [ "sacré coeur" , "tour eiffel" ]
 ]
-
 [
     nom Marseille 
     nbHabitant : 3_000_000
     arrondissements 15 
     monuments ["vieux port" , "vélodrome"]
-]
+] */
 
 /* écrire dans le navigateur les phrases suivantes 
 
