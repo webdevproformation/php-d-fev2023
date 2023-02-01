@@ -75,3 +75,16 @@ echo substr_replace($activite,"pommes", 18,6 ). "<br>";
 
 echo substr_replace($activite," et des pommes", 24 , 0 ). "<br>"; 
 // j'aime manger des frites et des pommes
+
+
+// créer le fichier 06-exo.php 
+
+// tableau de tableau
+// formation
+// [ nom : "js" , prix : 2300,20 , sujets : ["install", "navigateur", "formulaire"]  ]
+// [ nom : "php" , prix : 750,55 , sujets : ["xampp", "apache"]  ]
+
+// écrire dans le navigateur 
+
+// la formation js coûte 2 300,2 euros et contient 3 sujets
+// la formation php coûte 750,5 euros et contient 2 sujets
