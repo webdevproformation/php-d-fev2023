@@ -34,8 +34,12 @@ echo "<p>" . $etudiants[1]["nom"] . " qui a " . $etudiants[1]["age"] . " maîtri
 
 // écrire les deux phrases suivantes (utiliser les boucles)
 
+
 // Alain débute sur css et maîtrise js
+echo "<p>{$etudiants[0]["nom"]} débute sur {$etudiants[0]["competences"][1]} et maîtrise {$etudiants[0]["competences"][0]}</p>";
+
 // Céline débute sur sql et maîtrise php
+echo "<p>{$etudiants[1]["nom"]} débute sur {$etudiants[1]["competences"][1]} et maîtrise {$etudiants[1]["competences"][0]}</p>";
 
 foreach($etudiants as $tutu){
     echo "<p>{$tutu["nom"]} débute sur {$tutu["competences"][1]} et maîtrise {$tutu["competences"][0]}</p>";
