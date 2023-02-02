@@ -32,5 +32,5 @@ var_dump($fleurs);
 // [nom : Denis , age 40 ]
 
 // si vous appelez le fichier 06-exo.php => afficher toutes les étudiants
-// si vous appelez le fichier 06-exo.php?age=15 => afficher toutes les étudiants dont l'age est supérieur à 15
-// si vous appelez le fichier 06-exo.php?age=50 => afficher toutes les étudiants dont l'age est supérieur à 50 => ici aucun
+// si vous appelez le fichier 06-exo.php?age=15 => afficher tous les étudiants dont l'age est supérieur à 15
+// si vous appelez le fichier 06-exo.php?age=50 => afficher tous les étudiants dont l'age est supérieur à 50 => ici aucun
