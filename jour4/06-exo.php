@@ -26,7 +26,7 @@ var_dump($etudiants);
 // [ "nom" : Xbox , prix 320 ]
 
 // si vous exécutez le fichier php sans aucune partie variable => afficher tous les produits 
-// si vous exécutez le fichier php avec aucune partie variable => 07-exo.php?min=200&max=250
+// si vous exécutez le fichier php avec une partie variable => 07-exo.php?min=200&max=250
 // [ "nom" : Nintendo DS , prix 200 ]
-// si vous exécutez le fichier php avec aucune partie variable => 07-exo.php?min=0&max=310
+// si vous exécutez le fichier php avec une partie variable => 07-exo.php?min=0&max=310
 // [ "nom" : Nintendo DS , prix 200 ] et [ "nom" : Playstation , prix 300.5 ]
