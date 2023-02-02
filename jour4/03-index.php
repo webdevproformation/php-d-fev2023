@@ -39,19 +39,25 @@ if(!empty($_GET)){
     <div class="container">
         <section class="row mt-5">
             <?php if( count($articles) == 1 ): ?>
+                <!-- 1 seul article -->
                 <article class='col-12'>
+                    <h1> Page single </h1>
                     <h2><?php echo $articles[0]["titre"] ?></h2>
                     <img src='<?php echo $articles[0]["img"] ?>' alt='' >
                     <p><?php echo $articles[0]["contenu"] ?></p>
                     <a href="http://localhost/php-initiation/jour4/03-index.php">retour à la page d'accueil</a>
                 </article>
             <?php elseif( count($articles) > 1 ) : ?>
+                <!-- page d'accueil -->
+                <h1> Page d'Accueil </h1>
                 <?php foreach($articles as $a) : ?>
                     <div class="col-3 mb-3">
                         <?php echo genererArticle($a) ?>
                     </div>
                 <?php endforeach ?>
             <?php else : ?>
+                <h1>Page erreur 404</h1>
+                <!-- page d'erreur -->
                 <p>Erreur 404 l'article demandé n'existe pas ...</p>
             <?php endif ?>
         </section>
