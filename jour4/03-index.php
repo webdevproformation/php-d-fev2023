@@ -58,7 +58,7 @@ if(!empty($_GET)){
             <?php else : ?>
                 <h1>Page erreur 404</h1>
                 <!-- page d'erreur -->
-                <p>Erreur 404 l'article demandé n'existe pas ...</p>
+                <p class="alert alert-danger">Erreur 404 l'article demandé n'existe pas ...</p>
             <?php endif ?>
         </section>
     </div>

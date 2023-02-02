@@ -20,4 +20,28 @@ if(!empty($_GET)){                       // détecte si il y a la partie variabl
     $data = $recherche ;                 // remplacer le tableau multidimentionnel par le rempli
 }
 // $data = [ [ "id" => "1" , "texte" => "je suis l'article 1"]]
-var_dump($data);
+
+// affichage 
+if(count($data) === 1){
+    echo "<h1>page article</h1>";
+    var_dump($data);
+}elseif(count($data) > 1){
+    echo "<h1>page d'accueil</h1>";
+    var_dump($data);
+}else{
+    echo "<h1>erreur 404</h1>";
+    var_dump($data);
+}
+
+
+// créer le fichier 05-exo.php 
+// créer une variable $fleurs tableau multidimensionnel
+// [ nom rose , prix 200 , origin : France ]
+// [ nom jasmin , prix 300 , origin : Tunisie ]
+// [ nom muguet , prix 150 , origin : Allemagne ]
+
+// si vous exécuter  le fichier 05-exo.php => afficher à l'écran toutes les fleurs
+// si vous exécuter  le fichier 05-exo.php?nom=rose => afficher à l'écran uniquement la rose
+// si vous exécuter  le fichier 05-exo.php?nom=jasmin => afficher à l'écran uniquement le jasmin
+// si vous exécuter  le fichier 05-exo.php?nom=muguet => afficher à l'écran uniquement le muguet
+// si vous exécuter  le fichier 05-exo.php?nom=blabla => afficher une page d'erreur 404
