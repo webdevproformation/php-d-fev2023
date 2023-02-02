@@ -13,7 +13,7 @@ require "09-fonction.php";
 </head>
 <body>
     <div class="container">
-        <section class="row">
+        <section class="row mt-5">
             <?php foreach($articles as $a) : ?>
                 <div class="col-3 mb-3">
                     <?php echo genererArticle($a) ?>
