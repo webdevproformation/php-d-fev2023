@@ -38,7 +38,7 @@ if(!empty($_GET)){
 <body>
     <div class="container">
         <section class="row mt-5">
-            <?php if( count($articles) == 1 ): ?>
+            <?php if( count($articles) === 1 ): ?>
                 <!-- 1 seul article -->
                 <article class='col-12'>
                     <h1> Page single </h1>
