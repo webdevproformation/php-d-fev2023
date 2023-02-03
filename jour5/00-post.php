@@ -72,7 +72,7 @@ champ de type menu déroulant <select> 3 valeurs possibles français / anglais /
 bouton de soumission
 
 traiter le formulaire 
-bien vérifier que les champs sont bien rempli 
+bien vérifier que les champs sont bien remplis 
 que l'email est valide 
 que le menu déroulant vous donne français / anglais / arabe
 
