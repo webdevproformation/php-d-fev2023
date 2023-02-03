@@ -2,8 +2,7 @@
 require "09-bdd.php" ;
 //est ce que la page php est appelée avec une partie variable 
 if( !empty($_GET) &&       // est ce que j'ai une partie variable dans l'url
-    isset($_GET["nom"])){  // est la partie variable contient nom=
- 
+    isset($_GET["nom"])){  // est la partie variable contient nom= $_GET contient un élément qui a l'indexe nommé "nom"
     $nom = $_GET["nom"] ; // récupérer la valeur après le = dans l'url
     
     $villesFiltre = [] ;
