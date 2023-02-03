@@ -63,4 +63,22 @@ session_start();
 </body>
 </html>
 
+<!--
+créer le fichier 02-exo.php
 
+dans cette page vous allez créer un formulaire de newsletter 
+champ dans lequel vous pouvez saisir une email
+champ de type menu déroulant <select> 3 valeurs possibles français / anglais / arabe
+bouton de soumission
+
+traiter le formulaire 
+bien vérifier que les champs sont bien rempli 
+que l'email est valide 
+que le menu déroulant vous donne français / anglais / arabe
+
+// si tout est conforme => afficher sous le formulaire le texte "merci"
+// si ce n'est pas conforme => expliquez les erreurs réalisées 
+
+// encas d'erreur => récupérer les informations saisies avant sousmission pour éviter que la personne re remplisse intégralement le formulaire 
+
+-->
