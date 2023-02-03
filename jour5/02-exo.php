@@ -16,15 +16,15 @@ session_start();
         <h1>Exo 2 - formulaire newsletter</h1>
         <form action="02-traitement.php" method="POST">
             <div class="input-field">
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" value="<?php echo !empty($_SESSION["form"]["email"]) ? $_SESSION["form"]["email"] : "" ?>">
                 <label for="email">Votre email pour recevoir la newsletter</label>
             </div>
             <div class="input-field">
-                <select name="langue" id="langue" >
+                <select name="langue" id="langue">
                     <option value="" disabled selected>choisir</option>
-                    <option value="français">français</option>
-                    <option value="anglais">anglais</option>
-                    <option value="arabe">arabe</option>
+                    <option value="français" <?php echo !empty($_SESSION["form"]["langue"]) && $_SESSION["form"]["langue"] === "français" ? "selected" : "" ?>>français</option>
+                    <option value="anglais" <?php echo !empty($_SESSION["form"]["langue"]) && $_SESSION["form"]["langue"] === "anglais" ? "selected" : "" ?>>anglais</option>
+                    <option value="arabe" <?php echo !empty($_SESSION["form"]["langue"]) && $_SESSION["form"]["langue"] === "arabe" ? "selected" : "" ?>>arabe</option>
                 </select>
                 <label for="langue">choisir la langue de la newsletter</label>
             </div>
