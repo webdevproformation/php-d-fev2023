@@ -29,8 +29,8 @@ if( !empty($_GET) &&       // est ce que j'ai une partie variable dans l'url
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div>
+        <nav class="blue darken-2">
+            <div class="container">
                 <!-- ul>li*3>a   -->
                 <ul>
                     <li><a href="http://localhost/php-initiation/jour4/09-exo.php">Accueil</a></li>
