@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="bg-dark">
+    <header class="bg-dark sticky-top">
         <nav  class="navbar navbar-expand container navbar-dark mb-3">
             <span class="navbar-brand fs-3">
                 ✨
@@ -44,6 +44,7 @@
         <?php elseif( !empty($_GET["page"]) && $_GET["page"] === "mention"  ) : ?>
             <!-- page mention -->
             <?php require "vue/mention.php" ?>
+            <!-- ((h2>lorem2)+p*3>lorem40)*8 -->
         <?php else : ?>
             <!-- page 404 -->
             <?php require "vue/404.php" ?>
@@ -54,3 +55,4 @@
     </footer>
 </body>
 </html>
+<!-- http://localhost/php-initiation/blog/index.php -->
