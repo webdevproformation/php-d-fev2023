@@ -40,4 +40,15 @@ echo $fleur1->prix . "<br>" ;
 echo "j'ai acheté une " . $fleur1->nom . " à " . $fleur1->prix . " euros <br>";
 echo "j'ai acheté une " . $fleur1->nom . " à " . number_format( $fleur1->prix , 1 , ",") . " " . $fleur1->unite.  "s <br>";
 
+// créer le fichier 03-exo.php 
+// dans ce fichier créer une class Etudiant qui contient 4 propriétés
+// nom Alain
+// age 24
+// adresse 75 rue de Paris
+// competences ["js" et "php"]
 
+// une fois créée => créer une instance (objet) $etudiant 
+// grâce à cette instance vous allez écrire dans le navigateur les phrases suivantes 
+
+// Alain habite au 75 rue de Paris
+// A 24 ans il maîtrise 2 technologies 
