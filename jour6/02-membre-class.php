@@ -1,5 +1,5 @@
 <?php 
-// http://localhost/php-initiation/jour6/02-membre-class.php
+    // http://localhost/php-initiation/jour6/02-membre-class.php
 
 
 $etudiant = "Alain" ; 
