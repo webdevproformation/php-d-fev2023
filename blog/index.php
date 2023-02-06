@@ -31,6 +31,7 @@
     <div class="container">
         <?php if(empty($_GET)) : ?>
             <!-- page d'accueil -->
+            <?php require "data.php" ?> <!-- mise à disposition de la variable $articles pour l'accueil -->
             <?php require "vue/accueil.php" ?>
         <?php elseif( !empty($_GET["page"]) && $_GET["page"] === "article"  ) : ?>
             <!-- page article  -->

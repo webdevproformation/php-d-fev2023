@@ -19,4 +19,22 @@ $articles = [
         "contenu" => "lorem" , 
         "img" => "https://source.unsplash.com/random/500x302"
     ],
+    [ 
+        "id" => "4" , 
+        "titre" => "quatre article" , 
+        "contenu" => "lorem" , 
+        "img" => "https://source.unsplash.com/random/500x303"
+    ],
+    [ 
+        "id" => "5" , 
+        "titre" => "cinq article" , 
+        "contenu" => "lorem" , 
+        "img" => "https://source.unsplash.com/random/500x304"
+    ],
+    [ 
+        "id" => "6" , 
+        "titre" => "six article" , 
+        "contenu" => "lorem" , 
+        "img" => "https://source.unsplash.com/random/500x305"
+    ],
 ];
