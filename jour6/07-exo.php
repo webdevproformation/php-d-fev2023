@@ -22,7 +22,7 @@ echo $c->perimetre() . "<br>";
 // nom  "devOps"
 // duree 5
 // prix  5000
-// matieres linux php html css 
+// matieres => linux php html css 
 
 // cette class dispose de 3 méthodes 
 // devis 
@@ -32,4 +32,4 @@ echo $c->perimetre() . "<br>";
 // retourner le texte suivant "il y a 4 sujets abordés durant les 5 semaines"
 
 // sommaire : 
-//retourne le texte suivant : vous allez étudiant linux, php, html et css 
+// retourne le texte suivant : vous allez étudier linux, php, html et css 
