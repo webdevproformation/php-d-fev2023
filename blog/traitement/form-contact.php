@@ -25,7 +25,7 @@ if(count($erreurs) === 0){ // afficher un message sous le formulaire
         "alert" => "success",
         "info" => "merci !!!"
     ];
-    $_SESSION["form"] = [];
+    $_SESSION["form"] = []; // vider les réponses du formulaire 
 }else {
     $_SESSION["message"] = [
         "alert" => "danger",
