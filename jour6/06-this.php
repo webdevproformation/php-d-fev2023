@@ -17,8 +17,6 @@ $rectangle = new Rectangle();
 $rectangle->largeur ; 
 
 echo $rectangle->calculPerimetre() . "<br>";
-
-
 // créer le fichier 07-exo.php 
 // créer une class Cercle 
 // contient une propriété rayon et qui a pour valeur 30
