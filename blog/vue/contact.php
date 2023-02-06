@@ -36,4 +36,3 @@ password
 <?php if(!empty($_SESSION["message"])){
     $_SESSION["message"] = [];
 }
-?>
