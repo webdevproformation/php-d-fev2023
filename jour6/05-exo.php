@@ -14,9 +14,11 @@ class Exo {
         }
     }
 }
+// hors de la class 
 $e = new Exo();
 echo $e->enonce() . "<br>";
 echo $e->conseil(true) . "<br>";
+echo $e->note . "<br>";
 
 // $this 
 // private public 
