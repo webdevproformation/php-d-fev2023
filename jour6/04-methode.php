@@ -24,7 +24,7 @@ echo $f->presentation("php poo") ."<br>";
 
 // créer le fichier 05-exo.php 
 // dans ce fichier vous allez créer une class Exo
-// contient 1 propriété note qui est un chiffre entier 
+// contient 1 propriété note qui est un chiffre entier qui vaut 20
 
 // contient 2 méthodes 
 // enonce fonction ne dispose d'aucun paramètre et retourne du texte 
