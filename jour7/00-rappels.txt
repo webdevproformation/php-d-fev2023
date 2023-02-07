@@ -76,6 +76,7 @@ support :
 https://formation.webdevpro.net/php-poo 
 login : php 
 password : poo
+https://github.com/webdevproformation/php-d-fev2023
 
 créer dans le dossier jour7 le fichier 01-exo.php 
 créer une class Immeuble 
@@ -83,7 +84,7 @@ créer une class Immeuble
 // adresse 102 rue de Lille 
 // habitants tableau avec Alain / Céline / Pierre et Zorro
 // etatAscenseur  false 
-// deux méthodes 
+// contient deux méthodes 
 // infoMaintenance retourne du texte et 
 si etatAscenseur  est false => "l'ascenseur est en panne"
 si etatAscenseur  est true => "l'ascenseur est en fonctionnel"
