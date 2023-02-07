@@ -33,3 +33,4 @@ class A {
         $this->largeur = $largeur_p; // donne une valeur à $this->largeur 
     }
 }
+// rdv 10h50 !!! 
