@@ -13,7 +13,18 @@ class Exo {
         $this->enonce = $enonce_p;
         $this->sujets = $sujets_p;
     }
+    public function getAll() :string {
+        return $this->note . " " . $this->enonce;
+    }
 }
-
-$e1 = new Exo(20 , "créer une fonction" , ["créer", "exécuter"]);
+$e1 = new Exo(20 , "créer une fonction" , ["créer", "exécuter"]) ; 
 $e2 = new Exo(10 , "créer une variable" , ["lister", "compteur", "afficher"]);
+// on ne peut pas concaténer un objet avec du texte
+// $e1 = new Exo(20 , "créer une fonction" , ["créer", "exécuter"]) ."<br>" ;
+// "erreur"
+// echo $e1 . "<br>";
+// erreur
+// on peut concaténer une propriété d'un objet avec du texte
+// on peut concaténer une méthode exécuté d'un objet  avec du texte
+echo $e1->note . "<br>" ; // OK !!!
+echo $e1->getAll() . "<br>";
