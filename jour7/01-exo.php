@@ -19,3 +19,17 @@ class Immeuble {
 $immeuble = new Immeuble() ; // créer l'objet $immeuble 
 echo $immeuble->infoMaintenance() ."<br>"; // ne pas oublier les () à la fin sinon c'est une propriété
 echo $immeuble->description() . "<br>";
+
+// commentaire faire pour donner une valeur variable aux propriétés d'une class 
+
+// méthode magique constructeur 
+
+class A {
+    public int $largeur ; // créer une propriété de class
+
+    public function __construct($largeur_p) 
+    // fonction magique qui contient une instructions
+    {
+        $this->largeur = $largeur_p; // donne une valeur à $this->largeur 
+    }
+}
