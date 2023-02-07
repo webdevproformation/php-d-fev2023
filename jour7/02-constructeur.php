@@ -22,15 +22,16 @@ $a = new A() ; // + création objet $a ET __construct()
 $a->toto();
 
 class B {
-    public string $nom ; // SANS le = SANS valeur
+    public string $nom ; // SANS le = SANS valeur // propriété
     public int $largeur ; // SANS le = 
 
+                         // paramètre 
     function __construct( string $nom_p , int $largeur_p ){ 
         // la fonction constructrice de la class
         // permettre de définir la class 
         // le role du constructure :
         // remplir de paramètre et d'instruction qui vont initialiser des propriétés 
-        $this->nom = $nom_p ; // "bonjour"
+        $this->nom = $nom_p ; // "bonjour" // donne une valeur à une propriété depuis un paramètre 
         // $this->nom = "bonjour" ;
         $this->largeur = $largeur_p ; // 42 
     }
@@ -38,3 +39,14 @@ class B {
 
 $b = new B("bonjour" , 42);
 // donc 
+
+// créer le fichier 03-exo.php 
+// créer une class Exo qui contient 3 propriétés
+// note chiffre entier
+// enonce texte
+// sujets un tableau
+
+// class dispose d'une fonction constructrice qui initialise ses trois propriétés
+
+// créer un objet $e1 qui aura comme arguments 20 "créer une fonction"  , ["créer", "exécuter"]
+// créer un objet $e2 qui aura comme arguments 10 "créer une variable"  , ["lister", "compteur", "afficher"]
