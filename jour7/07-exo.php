@@ -18,3 +18,12 @@ CREATE TABLE IF NOT EXISTS auteur (
     dt_creation DATE
 )
 ");
+
+// créer un nouveau fichier 08-exo.php
+// vous connectez à la base 06-bdd.db
+
+// insérer 4 lignes dans la table auteur
+// Victor Hugo actif 01/01/2023
+// George Sand actif 01/02/2023
+// Jean Jacques Rousseau inactif 15/01/2012
+// Arthur Rimbaud actif 01/01/2023
