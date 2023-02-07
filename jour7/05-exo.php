@@ -29,3 +29,6 @@ class Livre{
 $livre1 = new Livre("Victor Hugo",1 ,1 ,1880 ,"Notre Dame de Paris") ; // "1880-1-1" "1880-01-01"
 echo $livre1->getDateFr() . "<br>";
 echo $livre1->description() . "<br>";
+// PDO 
+
+// 15h25 bon café @ toute suite !! 
