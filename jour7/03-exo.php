@@ -25,6 +25,11 @@ $e2 = new Exo(10 , "créer une variable" , ["lister", "compteur", "afficher"]);
 // echo $e1 . "<br>";
 // erreur
 // on peut concaténer une propriété d'un objet avec du texte
-// on peut concaténer une méthode exécuté d'un objet  avec du texte
+// on peut concaténer une méthode exécutée d'un objet  avec du texte
 echo $e1->note . "<br>" ; // OK !!!
 echo $e1->getAll() . "<br>";
+
+// private // setter et getter 
+// PDO class native de PHP 
+// https://www.php.net/manual/fr/class.pdo.php
+// 13h35 bon app
