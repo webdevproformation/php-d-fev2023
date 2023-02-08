@@ -63,7 +63,7 @@ if(count($erreurs) === 0){
     "); 
     // requête préparée => requete dans laquelle on prévient PHP que il y a des champs sous la forme :col
     $sth->execute($_POST);
-    // vider la $_SESSION["form"]
+    // vider la $_SESSION["form"] => vider le formulaire 
     $_SESSION["form"] = [];
     
 }else {

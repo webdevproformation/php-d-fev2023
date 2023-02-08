@@ -37,3 +37,13 @@ input[type="text"], input[type="date"] , textarea{
     color : white;
     font-size: 0.9rem;
 }
+
+.green{
+    background: #00796b ;
+    color : white;
+}
+
+.pink{
+    background: #e64a19;
+    color : white;
+}
