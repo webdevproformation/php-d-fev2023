@@ -1,15 +1,18 @@
 créer un nouveau dossier gestion-utilisateur
 
-créer un fichier form.php 
+créer un fichier form.php contient un formulaire avec 6 champs 
 
 nom input de type text
 email input de type email 
 password input de type password 
 menu déroulant role => rédacteur / admin / user 
-dt_creation 
+dt_creation jj/mm/aaaa 
 case à cocher (si c'est coché => actif / décoché inactif)
+
 bouton pour soumettre le formulaire 
+
+javascript bonus : sur le champ password ajouter un bouton qui permet d'afficher le mot de passe en clair 
 
 traitement 
 
-créer une base => créer un table users qui contient autant de champ que ceux du formulaire (sans oublier en + id clé primaire)
+créer une base => créer un table users qui contient autant de champ que ceux du formulaire (sans oublier en + id clé primaire) => 7 colonnes dans la table users 
