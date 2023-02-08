@@ -1,0 +1,16 @@
+constructeur de class
+
+attributs privés 
+
+encapsulation 
+
+setter 
+
+PDO (class native)
+
+effectuer des traitements avec une base de données via PDO 
+
+CREATE TABLE 
+INSERT 
+UPDATE 
+DELETE 

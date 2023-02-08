@@ -1,8 +1,7 @@
 <?php 
 // http://localhost/php-initiation/jour7/08-exo.php
 
-$connexion = new PDO("sqlite:./06-bdd.db");
-
+$connexion = new PDO("sqlite:./06-bdd.db"); 
 /* $connexion->query("
     INSERT INTO auteur 
     ()
@@ -12,7 +11,6 @@ $connexion = new PDO("sqlite:./06-bdd.db");
     () ,
     () ;
 "); */
-
 $connexion->query("
     INSERT INTO auteur 
        ( prenom , nom , status , dt_creation )
