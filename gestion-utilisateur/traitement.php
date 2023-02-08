@@ -58,9 +58,9 @@ if(count($erreurs) === 0){
         )
     ");
     if(isset($_POST["actif"])){
-        $_POST["actif"] = true ;
+        $_POST["actif"] = "1" ;
     }else {
-        $_POST["actif"] = false ;
+        $_POST["actif"] = "0" ;
     }
     // INSERER les données 
     $sth = $connexion->prepare("
@@ -72,11 +72,21 @@ if(count($erreurs) === 0){
     $sth-> execute($_POST);
 
     // dire merci 
-
+    $_SESSION["message"] = [
+        "alert" => "success",
+        "info"  => "merci le profil utilisateur a été créé en base de données"
+    ];
     // vider le formulaire 
+    $_SESSION["form"] = [];
 }else {
     // dire les erreurs 
+     // dire les erreurs 
+     $_SESSION["message"] = [
+        "alert" => "danger",
+        "info"  => $erreurs
+    ];
 }
-// redirection vers la formulaire
-
+// redirection le formulaire 
+header("Location: http://localhost/php-initiation/gestion-utilisateur/form.php");
 // stop 
+exit ; 
