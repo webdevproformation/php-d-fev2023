@@ -40,6 +40,16 @@ if(isset($_POST["actif"]) && $_POST["actif"] !== "on"){
     array_push($erreurs, "la valeur du status n'est pas correcte");
 }
 
+/* var_dump($_POST); // est ce que j'ai bien tous les champs du formulaire remplis ???
+var_dump($erreurs); // est ce que un des tests précédents est vrai ?? 
+exit ;  */
+
+if(isset($_POST["actif"])){
+    $_POST["actif"] = "1" ;
+}else {
+    $_POST["actif"] = "0" ;
+}
+
 $_SESSION["form"] = $_POST ;
 
 if(count($erreurs) === 0){
@@ -57,11 +67,7 @@ if(count($erreurs) === 0){
             actif BOOLEAN
         )
     ");
-    if(isset($_POST["actif"])){
-        $_POST["actif"] = "1" ;
-    }else {
-        $_POST["actif"] = "0" ;
-    }
+    
     // INSERER les données 
     $sth = $connexion->prepare("
         INSERT INTO users
