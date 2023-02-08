@@ -1,0 +1,15 @@
+créer un nouveau dossier gestion-utilisateur
+
+créer un fichier form.php 
+
+nom input de type text
+email input de type email 
+password input de type password 
+menu déroulant role => rédacteur / admin / user 
+dt_creation 
+case à cocher (si c'est coché => actif / décoché inactif)
+bouton pour soumettre le formulaire 
+
+traitement 
+
+créer une base => créer un table users qui contient autant de champ que ceux du formulaire (sans oublier en + id clé primaire)
