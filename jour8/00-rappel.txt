@@ -14,3 +14,25 @@ CREATE TABLE
 INSERT 
 UPDATE 
 DELETE 
+
+=> CRUD avec PHP 
+
+
+// cas pratique 
+// créer un nouveau dossier crud 
+
+// créer un fichier form.php
+
+// créer un formulaire (utiliser bootstrap / css / sass / materialize )
+
+doit contenir 4 champs 
+titre input text
+contenu  textarea
+auteur  input text 
+dt_creation input date 
+
+=> créer un fichier traitement.php => récupérer les informations saisies du formulaire $_POST
+
+effectuer des vérifications avant traitement 
+=> ajouter les informations saisies dans la table 
+
