@@ -37,3 +37,23 @@ class ArticleTechnique extends Article {
 /* 
 $article = new ArticleTechnique2;
 echo $article->genererHTML(); */
+
+
+// créer le fichier 04-exo.php 
+// ce fichier contient plusieurs class
+
+// première class Form 
+// propriété public nbCote 
+// propriété public couleur 
+
+// méthode public surface contient aucun traitement et aucun paramètre
+
+
+// class Rectangle hérite de forme 
+// initialiser la valeur de nbCoté => 4
+// initialiser la valeur de couleur  => blue 
+
+// modifier la méthode => surface => retourner la valeur 10 
+
+// exécuter la class Rectangle et utilisez la méthode surface 
+
