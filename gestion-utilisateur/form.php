@@ -72,18 +72,23 @@ session_start();
     </div>
     <script>
         // préremplir le champ date de création à aujourd'hui 
-        const dt = new Date(); // récupérer la date du jour et stocker dans la variable dt 
-        const annee = dt.getFullYear(); // extraire l'année de dt
-        const mois = ("0" + (dt.getMonth() + 1) ).slice(-2); // extraire le mois de dt + 1 
+        
+        if(document.querySelector("#dt_creation").value === ""){
+            /* const dt = new Date(); // récupérer la date du jour et stocker dans la variable dt 
+            const annee = dt.getFullYear(); // extraire l'année de dt
+            const mois = ("0" + (dt.getMonth() + 1) ).slice(-2); // extraire le mois de dt + 1 
             // dt.getMonth() => decembre => 11
             // dt.getMonth() + 1 => janvier => 12
             // "0" + dt.getMonth() + 1 => janvier => 012
             // ("0" + dt.getMonth() + 1 ).slice(-2) => 12
                                 
-        const jour = ("0" + dt.getDate()).slice(-2); // extraite le jour de dt
+            const jour = ("0" + dt.getDate()).slice(-2); // extraite le jour de dt */
 
-        if(document.querySelector("#dt_creation").value === ""){
-            document.querySelector("#dt_creation").value = `${annee}-${mois}-${jour}`;
+            // document.querySelector("#dt_creation").value = `${annee}-${mois}-${jour}`;
+            document.querySelector("#dt_creation").valueAsDate = new Date();
+            // php date()
+            // js new Date() Date.now()
+            // SQL NOW()
         }
 
         // lorsque l'on clique sur le bouton show => changer le type du champ password => text
