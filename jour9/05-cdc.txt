@@ -40,7 +40,9 @@ Gestion des utilisateurs  index.php?page=users&partie=privee
 
 -----------------
 
-base de données 
+base de données => connecté à phpMyAdmin  
+
+=> créer une base "projet"
 
 deux concepts à gérer  =>  deux tables à gérer 
 
@@ -51,6 +53,10 @@ slug => texte sans espace sans caractères spéciaux
 contenu  texte avec au maximum 65 mille de lettres 
 dt_creation DATE et heure
 auteur texte maximum de 255 lettres
+
+utf8mb4_general_ci => fonction permet de stocker correctement les caractères sur le disque dur 
+stocker correctement les lettres fr éàèç 
+encodage 
 
 users 6 colonnes
 id clé primaire 
@@ -78,3 +84,5 @@ vue/public =>
             gestion-user.php 
             401.php 
 lib/ => class et les traitements des formulaires / autres fonctions 
+
+
