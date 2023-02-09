@@ -108,4 +108,4 @@ session_start();
     </script>
 </body>
 </html>
-<!-- http://localhost/php-initiation/gestion-utilisateur/form.php -->
+<!-- http://localhost/php-initiation/jour8/gestion-utilisateur/form.php -->

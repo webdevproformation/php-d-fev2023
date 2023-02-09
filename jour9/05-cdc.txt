@@ -1,0 +1,80 @@
+
+Combien de pages ???
+
+Partie publique (n'importe qui peut accéder)
+Accueil
+Présentation
+Login (login / password)
+Mention légale
+404 
+
+Partie privée (il faut au préalable se connecter pour pouvoir y accéder)
+Accueil => Tableau de Bord 
+Gestion des pages 
+Gestion des utilisateurs 
+401 => si une personne n'est pas connecté MAIS veut accéder à une page de la Partie privée
+
+9 pages à créer => 
+
+-----------------------
+
+wireframing => mise en page générale du site => 
+
+-----------------------
+
+url 
+
+Partie publique (n'importe qui peut accéder)
+Accueil => index.php
+Présentation index.php?page=presentation
+Login (login / password) index.php?page=login
+Mention légale  index.php?page=mention
+404  tous les autres cas 
+
+Partie privée (il faut au préalable se connecter pour pouvoir y accéder)
+Accueil => Tableau de Bord index.php?page=accueil&partie=privee
+Gestion des pages  index.php?page=page&partie=privee
+Gestion des utilisateurs  index.php?page=users&partie=privee
+401 => si une personne n'est pas connecté MAIS veut accéder à une page de la Partie privée 
+    index.php?page=test&partie=privee
+
+-----------------
+
+base de données 
+
+deux concepts à gérer  =>  deux tables à gérer 
+
+table pages qui contient 6 colonnes
+id clé primaire 
+titre texte maximum de 255 lettres
+slug => texte sans espace sans caractères spéciaux
+contenu  texte avec au maximum 65 mille de lettres 
+dt_creation DATE et heure
+auteur texte maximum de 255 lettres
+
+users 6 colonnes
+id clé primaire 
+nom texte maximum de 255 lettres
+email  texte maximum de 255 lettres
+mot de passe  texte maximum de 255 lettres
+dt_creation DATE et heure
+status actif / inactif Boolean 
+
+-----------------
+
+architecture 
+
+index.php 
+assets/ => fichier css / js / image / pdf / sass 
+vue/public => 
+            accueil.php
+            presentation.php
+            login.php
+            404.php
+            mention-legale.php
+   /privee
+            tableau-bord.php 
+            gestion-page.php 
+            gestion-user.php 
+            401.php 
+lib/ => class et les traitements des formulaires / autres fonctions 
