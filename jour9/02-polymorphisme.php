@@ -89,3 +89,26 @@ echo $m->frapper(); // 25
 // table catégorie  => CRUD  enfant
 // table etiquette  => CRUD  enfant
 // table image  => CRUD  enfant
+
+// créer le fichier 03-exo.php contenant 2 class :
+// class Article
+// propriété public = titre
+// propriété public = contenu
+// propriété public = dt_creation
+
+// public méthode genererHTML(){
+// return le html suivant
+// <article>
+// <h2>titre</h2>
+// <p>contenu</p>
+// <p>date de création : dt_creation </p>
+// </article>
+//}
+
+// class ArticleTechnique hérite de Article
+// définir les valeurs de 3 propriétés 
+// titre "Article technique"
+// contenu "lorem ipsum"
+// dt_creation => date aujourd'hui au format jj/mm/aaaa
+// créer un objet à partir de la class ArticleTechnique
+// exécuter la méthode genererHTML()
