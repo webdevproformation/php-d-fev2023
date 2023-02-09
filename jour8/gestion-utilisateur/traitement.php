@@ -75,7 +75,7 @@ if(count($erreurs) === 0){
         VALUES
         (:nom , :email , :password,:role,:dt_creation , :actif)
     "); 
-    $sth-> execute($_POST);
+    $sth->execute($_POST);
 
     // dire merci 
     $_SESSION["message"] = [
