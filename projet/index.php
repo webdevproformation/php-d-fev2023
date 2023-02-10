@@ -1,5 +1,9 @@
 <?php 
 session_start(); // étant donné formulaire + authentification => prépare le terrain
+
+// le nom de domaine de ton projet 
+define("WWW","http://localhost/php-initiation/projet/index.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -57,7 +61,17 @@ session_start(); // étant donné formulaire + authentification => prépare le t
         <?php elseif( !empty($_GET["page"]) && !empty($_GET["partie"]) && 
                 $_GET["page"] === "user" && 
                 $_GET["partie"] === "privee") : ?>
-            <?php require "vue/privee/gestion-user.php" ?>
+
+            <?php if(!empty($_GET["action"]) && $_GET["action"] == "add" ) : ?>
+                <?php require "vue/privee/gestion-user-form.php" ?>
+
+            <?php elseif(!empty($_GET["action"]) && $_GET["action"] == "delete" ) : ?>
+
+            <?php elseif(!empty($_GET["action"]) && $_GET["action"] == "update" ) : ?>
+                
+            <?php else : ?>
+                <?php require "vue/privee/gestion-user.php" ?>
+            <?php endif ?>
 
         <?php elseif( !empty($_GET["page"]) && !empty($_GET["partie"]) && 
                 $_GET["page"] === "page" && 
