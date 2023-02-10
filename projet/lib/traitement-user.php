@@ -37,6 +37,15 @@ $_SESSION["form"] = $_POST ;
 
 if(count($erreurs) === 0){
     $_SESSION["form"] = [];
+    $sth = $connexion->prepare("
+        INSERT INTO users 
+        (nom , email , password , dt_creation , status)
+        VALUES
+        (:nom , :email , MD5(:password) , NOW() , :actif)
+    ");
+    // MD5() fonction de hashage de MySQL => permet de hasher le mot de passe dans la base 
+    // ET la fonction ne dispose pas de fonction inverse 
+    $sth->execute($_POST);
     // ajouter le profil en base données 
     header("Location: http://localhost/php-initiation/projet/index.php?page=user&partie=privee");
 }else{
