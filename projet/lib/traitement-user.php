@@ -24,7 +24,7 @@ if(strlen($_POST["password"]) <= 4 || strlen($_POST["password"]) >= 255){
     array_push($erreurs , "le champ password doit contenir entre 4 et 255 lettres");
 }
 
-// autre test => il ne faut pas qu'il y ait 2 utilisateurs qui disposent du même 
+// autre test => il ne faut pas qu'il y ait 2 utilisateurs qui disposent du même email
 $sth = $connexion->prepare("SELECT * FROM users WHERE email = :email");
 $sth->execute(["email" => $_POST["email"]]);
 $resultat = $sth->fetchAll();
