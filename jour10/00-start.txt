@@ -1,0 +1,3 @@
+start Apache et MariaDB (sur XAMPP)
+
+http://localhost/php-initiation/projet/index.php

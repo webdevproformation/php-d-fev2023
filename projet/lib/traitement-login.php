@@ -11,7 +11,7 @@ $_SESSION["form"] = $_POST ;
 
 if(count($erreurs) === 0){
     $_SESSION["form"] = [];
-    unset($_SESSION["message"]); // supprimer une variable 
+    
     header("Location: http://localhost/php-initiation/projet/index.php?page=accueil&partie=privee");
 }else{
     $_SESSION["message"] = [
