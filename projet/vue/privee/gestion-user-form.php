@@ -39,7 +39,7 @@
             </div>
             <?php if(isset($user)) : ?>
                 <!-- champ qui permet de distinguer entre INSERT et l'UPDATE -->
-                <input type="hidden" name="id" value="<?php echo $user["status"] ?>">
+                <input type="hidden" name="id" value="<?php echo $user["id"] ?>">
             <?php endif ?>
             <div class="mb-3">
                 <input type="submit" class="btn btn-success">
