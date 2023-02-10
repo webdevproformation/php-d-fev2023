@@ -87,7 +87,6 @@ require "lib/base-de-donnee.php";
                     ");
                     $sth->execute(["id" => $_GET["id"]]);
                     $user = $sth->fetch();
-                    var_dump($user);
                 ?>
                 <?php require "vue/privee/gestion-user-form.php" ?>
 
