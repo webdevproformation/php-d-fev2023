@@ -25,6 +25,13 @@ if(strlen($_POST["password"]) <= 4 || strlen($_POST["password"]) >= 255){
 }
 
 // autre test => il ne faut pas qu'il y ait 2 utilisateurs qui disposent du même 
+$sth = $connexion->prepare("SELECT * FROM users WHERE email = :email");
+$sth->execute(["email" => $_POST["email"]]);
+$resultat = $sth->fetchAll();
+
+if(!empty($resultat)){
+    array_push($erreurs , "il existe déjà un profil avec cet email");
+}
 
 if(isset($_POST["actif"])){
     $_POST["actif"] = "1";
@@ -37,6 +44,7 @@ $_SESSION["form"] = $_POST ;
 
 if(count($erreurs) === 0){
     $_SESSION["form"] = [];
+    // ajouter le profil en base données 
     $sth = $connexion->prepare("
         INSERT INTO users 
         (nom , email , password , dt_creation , status)
@@ -46,7 +54,7 @@ if(count($erreurs) === 0){
     // MD5() fonction de hashage de MySQL => permet de hasher le mot de passe dans la base 
     // ET la fonction ne dispose pas de fonction inverse 
     $sth->execute($_POST);
-    // ajouter le profil en base données 
+    
     header("Location: http://localhost/php-initiation/projet/index.php?page=user&partie=privee");
 }else{
     $_SESSION["message"] = [
