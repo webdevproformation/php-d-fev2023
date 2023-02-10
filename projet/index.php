@@ -6,7 +6,7 @@ define("WWW","http://localhost/php-initiation/projet/index.php");
 
 // appeler la base de données 
 require "lib/base-de-donnee.php";
-    
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -70,8 +70,28 @@ require "lib/base-de-donnee.php";
 
             <?php elseif(!empty($_GET["action"]) && $_GET["action"] == "delete" ) : ?>
 
+                <?php 
+                    $sth = $connexion->prepare("
+                        DELETE FROM users WHERE id = :id
+                    ");
+                    $sth->execute(["id" => $_GET["id"]]);
+                    header("Location: ". WWW . "?page=user&partie=privee");
+                    exit ; 
+                ?>
+
             <?php elseif(!empty($_GET["action"]) && $_GET["action"] == "update" ) : ?>
                 
+                <?php 
+                    $sth = $connexion->prepare("
+                        SELECT * FROM users WHERE id = :id
+                    ");
+                    $sth->execute(["id" => $_GET["id"]]);
+                    $user = $sth->fetch();
+                    var_dump($user);
+                ?>
+                <?php require "vue/privee/gestion-user-form.php" ?>
+
+
             <?php else : ?>
                 <?php require "vue/privee/gestion-user.php" ?>
             <?php endif ?>

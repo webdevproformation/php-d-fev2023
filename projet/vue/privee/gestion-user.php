@@ -41,13 +41,17 @@ $resultat = $sth->fetchAll();
                     <td><?php echo htmlentities($user["dt_creation"]) ?></td>
                     <td><?php echo htmlentities($user["status"]) ?></td>
                     <td>
-                        <a href="" class="btn btn-warning me-2"> modifier</a>
-                        <a href="" class="btn btn-danger"> supprimer</a>
+                        <a href="<?php echo WWW ?>?page=user&partie=privee&action=update&id=<?php echo htmlentities($user["id"]) ?>"  class="btn btn-warning me-2"> modifier</a>
+                        <a 
+                            href="<?php echo WWW ?>?page=user&partie=privee&action=delete&id=<?php echo htmlentities($user["id"]) ?>" 
+                            class="btn btn-danger" 
+                            onclick="return confirm('êtes vous sûr de vouloir supprimer ce profil')"> 
+                            supprimer
+                        </a>
                     </td>
                 </tr>
                 <?php endforeach ?>
             </tbody>
         </table>
-
     </div>
 </section>
