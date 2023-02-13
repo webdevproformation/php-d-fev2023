@@ -137,10 +137,9 @@ require "lib/base-de-donnee.php";
             <?php require "vue/public/404.php" ?>
         <?php endif ?>
 
-
-
     </div>
-
-
+    <footer class="my-3 text-center">
+        <a href="<?php echo WWW ?>?page=mention" class="text-decoration-none">mentions légales</a>
+    </footer>
 </body>
 </html>
