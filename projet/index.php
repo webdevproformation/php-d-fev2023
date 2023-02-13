@@ -119,7 +119,18 @@ require "lib/base-de-donnee.php";
         <?php elseif( !empty($_GET["page"]) && !empty($_GET["partie"]) && 
                 $_GET["page"] === "page" && 
                 $_GET["partie"] === "privee") : ?>
+
+            <!-- gérer le CRUD des pages ajout -->
+            <?php if(!empty($_GET["action"]) && $_GET["action"] == "add" ) : ?>
+                <?php require "vue/privee/gestion-page-form.php" ?>
+
+            <?php elseif(!empty($_GET["action"]) && $_GET["action"] == "delete" ) : ?>
+                <!-- suppression -->
+            <?php elseif(!empty($_GET["action"]) && $_GET["action"] == "update" ) : ?>
+
+            <?php else : ?>
                 <?php require "vue/privee/gestion-page.php" ?>
+            <?php endif ?>
 
         <!-- fin partie privée -->
         <?php else : ?>
