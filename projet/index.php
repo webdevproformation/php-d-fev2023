@@ -30,6 +30,7 @@ require "lib/base-de-donnee.php";
                     <a href="index.php?page=presentation" class="nav-link">Présentation</a>
                 </li>
             </ul>
+
             <ul class="navbar-nav ms-auto">
                 <?php if( isset($_SESSION["user"]) ) :?>
                     <li class="nav-item">
@@ -60,6 +61,19 @@ require "lib/base-de-donnee.php";
 
         <?php elseif( !empty($_GET["page"]) && $_GET["page"] === "mention" ) : ?>
             <?php require "vue/public/mention-legale.php" ?>
+
+        <?php elseif( !empty($_GET["page"]) && $_GET["page"] === "logout" ) : ?>
+            <!-- gérer la déconnexion --> 
+            <?php 
+                unset($_SESSION["user"]) ;
+                $_SESSION["message"] = [
+                    "alert" => "success",
+                    "info" => "vous avez été déconnecté avec succès"
+                ];
+                header("Location: " . WWW . "?page=login");
+                exit; // direction et stop 
+            ?>
+
         <!-- partie privée -->
 
         <?php elseif( !empty($_GET["page"]) && !empty($_GET["partie"]) && 
