@@ -19,7 +19,7 @@
 
             bonus (ensemble) => transformer le champ textarea rich via la librairie tinyMCE (ensemble)
         -->
-        <form action="" method="POST">
+        <form action="lib/traitement-page.php" method="POST">
             <div class="mb-3">
                 <label for="titre">titre de l'article</label>
                 <input type="text" class="form-control" 
@@ -37,7 +37,7 @@
             </div>
             <div class="mb-3">
                 <label for="image">image</label>
-                <input type="text" class="form-control" 
+                <input type="url" class="form-control" 
                     name="image" placeholder="url de l'image" id="image">
             </div>
             <div class="mb-3">
@@ -49,6 +49,7 @@
                 <input type="submit" class="btn btn-success">
             </div>
         </form>
+        <?php require "lib/message-flash.php" ?>
     </div>
 </section>
 <!-- ajouter un peu de js pour transformer le textarea en textarea enrichit => avec des boutons en dessus qui vont permettre de mettre du html dans le champ ! 
