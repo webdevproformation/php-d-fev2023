@@ -5,7 +5,7 @@
     </div>
     <div class="col">
         <div class="text-end mb-3">
-            <a href="" class="btn btn-primary">ajouter une nouvelle page</a>
+            <a href="<?php echo WWW ?>?page=page&partie=privee&action=add" class="btn btn-primary">ajouter une nouvelle page</a>
         </div>
         <table class="table table-striped">
             <thead>
