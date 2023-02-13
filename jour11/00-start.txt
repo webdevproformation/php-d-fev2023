@@ -33,3 +33,12 @@ INSERT INTO `users` (`id`, `nom`, `email`, `password`, `dt_creation`, `status`) 
 (15, 'Benoit modifié', 'benoit@yahoo.fr', 'e10adc3949ba59abbe56e057f20f883e', '2023-02-10 15:34:19', 1),
 (16, 'nouveau', 'nouveau@gmail.fr', 'e10adc3949ba59abbe56e057f20f883e', '2023-02-10 16:31:42', 1),
 (17, 'Céline', 'c@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', '2023-02-10 16:36:18', 1);
+
+
+=> créer la base de données => projet et encodage utf8mb4_general_ci
+
+=> url de la page d'accueil => http://localhost/php-initiation/projet/index.php
+
+=> récupérer le code et le redémarrer ! 
+
+// rdv 10h55 !!!!!!!!!! bon café @ toute suite !!
