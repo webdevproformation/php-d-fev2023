@@ -31,12 +31,18 @@ require "lib/base-de-donnee.php";
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="index.php?page=login" class="nav-link">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a href="index.php?page=accueil&partie=privee" class="nav-link">Tableau Bord</a>
-                </li>
+                <?php if( isset($_SESSION["user"]) ) :?>
+                    <li class="nav-item">
+                        <a href="index.php?page=accueil&partie=privee" class="nav-link">Tableau Bord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.php?page=logout" class="nav-link">Déconnexion</a>
+                    </li>
+                <?php else : ?>
+                    <li class="nav-item">
+                        <a href="index.php?page=login" class="nav-link">Login</a>
+                    </li>
+                <?php endif ?>
             </ul>
         </nav>
     </header>    
