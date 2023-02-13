@@ -30,12 +30,12 @@
             <tbody>
                 <?php foreach ($pages as $p) : ?>
                     <tr>
-                        <td><?php echo $p["id"] ?></td>
-                        <td><?php echo $p["titre"] ?></td>
-                        <td><?php echo $p["slug"] ?></td>
-                        <td><img src="<?php echo $p["image"] ?>" alt="" width="100"></td>
-                        <td><?php echo $p["auteur"] ?></td>
-                        <td><?php echo $p["dt_creation"] ?></td>
+                        <td><?php echo htmlentities($p["id"]) ?></td>
+                        <td><?php echo htmlentities($p["titre"]) ?></td>
+                        <td><?php echo htmlentities($p["slug"]) ?></td>
+                        <td><img src="<?php echo htmlentities($p["image"]) ?>" alt="" width="100"></td>
+                        <td><?php echo htmlentities($p["auteur"]) ?></td>
+                        <td><?php echo htmlentities($p["dt_creation"]) ?></td>
                         <td>
                             <a href="" class="btn btn-warning me-2">modifier</a>
                             <a href="" class="btn btn-danger" onclick="return confirm('voulez vous vraiment supprimer cette page ??')">supprimer</a>
