@@ -51,3 +51,27 @@
         </form>
     </div>
 </section>
+<!-- ajouter un peu de js pour transformer le textarea en textarea enrichit => avec des boutons en dessus qui vont permettre de mettre du html dans le champ ! 
+librairie javascript => TinyMCE (Wordpress)
+https://www.tiny.cloud/docs/tinymce/6/jquery-cloud/
+--> 
+<script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js"
+      referrerpolicy="origin"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tinymce/tinymce-jquery@2/dist/tinymce-jquery.min.js"></script>
+<script>
+    $('textarea#contenu').tinymce({
+        height: 200,
+        menubar: false,
+        toolbar: 'undo redo | blocks | bold italic backcolor | ' +
+          'alignleft aligncenter alignright alignjustify | ' +
+          'bullist numlist outdent indent | removeformat | help'
+      });
+</script>
+ 
