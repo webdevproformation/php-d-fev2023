@@ -50,6 +50,11 @@ isLogged();
                 <input type="text" class="form-control" 
                     name="auteur" placeholder="auteur" id="auteur" value="<?php echo isset($page) ? $page["auteur"] : "" ?>">
             </div>
+            <?php if(isset($page)) : ?>
+                <!-- champ qui permet de distinguer entre INSERT et l'UPDATE -->
+                <input type="hidden" name="id" value="<?php echo $page["id"] ?>">
+            <?php endif ?>
+
             <div class="mb-3">
                 <input type="submit" class="btn btn-success">
             </div>
