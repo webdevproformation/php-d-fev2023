@@ -1,0 +1,6 @@
+Enoncé
+
+Vous êtes invité à créer un site de recettes de cuisine 
+
+le site est composé de deux parties : une partie publique et une partie privée 
+
