@@ -28,27 +28,27 @@ isLogged();
             <div class="mb-3">
                 <label for="titre">titre de l'article</label>
                 <input type="text" class="form-control" 
-                    name="titre" placeholder="titre article" id="titre">
+                    name="titre" placeholder="titre article" id="titre" value="<?php echo isset($page) ? $page["titre"] : "" ?>">
             </div>
             <div class="mb-3">
                 <label for="slug">slug de l'article</label>
                 <input type="text" class="form-control" 
-                    name="slug" placeholder="slug article" id="slug">
+                    name="slug" placeholder="slug article" id="slug" value="<?php echo isset($page) ? $page["slug"] : "" ?>">
             </div>
             <div class="mb-3">
                 <label for="contenu">contenu article</label>
                 <textarea name="contenu" id="contenu" class="form-control" rows="5" 
-                    placeholder="contenu article"></textarea>
+                    placeholder="contenu article"><?php echo isset($page) ? $page["contenu"] : "" ?></textarea>
             </div>
             <div class="mb-3">
                 <label for="image">image</label>
                 <input type="url" class="form-control" 
-                    name="image" placeholder="url de l'image" id="image">
+                    name="image" placeholder="url de l'image" id="image" value="<?php echo isset($page) ? $page["image"] : "" ?>">
             </div>
             <div class="mb-3">
                 <label for="auteur">auteur</label>
                 <input type="text" class="form-control" 
-                    name="auteur" placeholder="auteur" id="auteur">
+                    name="auteur" placeholder="auteur" id="auteur" value="<?php echo isset($page) ? $page["auteur"] : "" ?>">
             </div>
             <div class="mb-3">
                 <input type="submit" class="btn btn-success">
