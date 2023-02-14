@@ -17,7 +17,7 @@ dans la partie privée vous avec les pages suivantes :
 - une page d'accueil qui vient saluer le gestionnaire du site 
 - une section gestion de pages pour créer la page mention légale 
 - une section gestion des recettes qui permet de réaliser un CRUD sur les recettes de cuisines 
-- une section commentaire dans laquelle on affiche l'ensemble des commentaires saisit dans la page contact de la partie privée 
+- une section commentaire dans laquelle on affiche l'ensemble des commentaires saisis dans la page contact de la partie publique 
 
 
 au niveau base de données vous avez 3 tables 
@@ -44,6 +44,12 @@ id clé primaire
 nom texte avec un maximum de 255 lettres 
 email texte avec un maximum de 255 lettres 
 password texte avec un maximum de 255 lettres 
+dt_creation date et l'heure 
+
+TABLE contacts
+id clé primaire 
+email texte avec un maximum de 255 lettres 
+commentaire texte avec un maximum de 65 milles lettres 
 dt_creation date et l'heure 
 
 ----
