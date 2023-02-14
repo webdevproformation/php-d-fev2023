@@ -41,8 +41,8 @@
                         <td><?php echo htmlentities($p["auteur"]) ?></td>
                         <td><?php echo htmlentities($p["dt_creation"]) ?></td>
                         <td>
-                            <a href="" class="btn btn-warning me-2">modifier</a>
-                            <a href="" class="btn btn-danger" onclick="return confirm('voulez vous vraiment supprimer cette page ??')">supprimer</a>
+                            <a href="<?php echo WWW ?>?page=page&partie=privee&action=update&id=<?php echo htmlentities($p["id"]) ?>" class="btn btn-warning me-2">modifier</a>
+                            <a href="<?php echo WWW ?>?page=page&partie=privee&action=delete&id=<?php echo htmlentities($p["id"]) ?>" class="btn btn-danger" onclick="return confirm('voulez vous vraiment supprimer cette page ??')">supprimer</a>
                         </td>
                     </tr>
                 <?php endforeach ?>
