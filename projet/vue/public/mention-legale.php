@@ -7,7 +7,7 @@ $mentions = $sth->fetch();
 ?>
 <?php if($mentions) : ?>
     <h1><?php echo $mentions["titre"] ?></h1>
-    <img src="<?php echo $mentions["image"] ?>" alt="">
+    <img src="<?php echo $mentions["image"] ?>" alt="" class="img-fluid">
     <div>
         <?php echo $mentions["contenu"] ?>
     </div>

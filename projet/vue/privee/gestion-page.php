@@ -18,6 +18,7 @@
         <div class="text-end mb-3">
             <a href="<?php echo WWW ?>?page=page&partie=privee&action=add" class="btn btn-primary">ajouter une nouvelle page</a>
         </div>
+        <?php require "lib/message-flash.php" ?>
         <table class="table table-striped">
             <thead>
                 <tr>

@@ -7,7 +7,7 @@ $presentation = $sth->fetch();
 ?>
 <?php if($presentation) : ?>
     <h1><?php echo $presentation["titre"] ?></h1>
-    <img src="<?php echo $presentation["image"] ?>" alt="">
+    <img src="<?php echo $presentation["image"] ?>" alt="" class="img-fluid">
     <div>
         <?php echo $presentation["contenu"] ?>
     </div>
