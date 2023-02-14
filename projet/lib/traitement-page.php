@@ -38,17 +38,35 @@ $_SESSION["form"] = $_POST ;
 
 // si tout est ok 
 if(count($erreurs) === 0){
-    $sth = $connexion->prepare("
-        INSERT INTO pages
-        ( titre , slug , contenu , image , auteur  , dt_creation)
-        VALUES 
-        ( :titre , :slug , :contenu , :image , :auteur , NOW())
-    ");
-    $sth->execute($_POST);
-    $_SESSION["message"] = [
-        "alert" => "success" ,
-        "info" => "la page a bien été insérée en base de données"
-    ];
+    if(!isset($_POST["id"])){
+        $sth = $connexion->prepare("
+            INSERT INTO pages
+            ( titre , slug , contenu , image , auteur  , dt_creation)
+            VALUES 
+            ( :titre , :slug , :contenu , :image , :auteur , NOW())
+        ");
+        $sth->execute($_POST);
+        $_SESSION["message"] = [
+            "alert" => "success" ,
+            "info" => "la page a bien été insérée en base de données"
+        ];
+    } else {
+        $sth = $connexion->prepare("
+            UPDATE pages SET
+                            titre = :titre , 
+                            slug = :slug  , 
+                            contenu = :contenu  , 
+                            image = :image , 
+                            auteur = :auteur
+            WHERE id = :id
+        ");
+        $sth->execute($_POST);
+        $_SESSION["message"] = [
+            "alert" => "success" ,
+            "info" => "la page a bien été mise à jour en bdd "
+        ];
+    }
+    
 }else {
     $_SESSION["message"] = [
         "alert" => "danger" ,
