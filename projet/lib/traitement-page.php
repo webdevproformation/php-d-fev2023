@@ -9,6 +9,8 @@ session_start();
 $erreurs = [];
 // connexion à la base de données
 require "base-de-donnee.php" ;
+require "fonctions.php";
+isLogged(); 
 
 // vérifier que tous les champs sont remplis => erreur 
 if(

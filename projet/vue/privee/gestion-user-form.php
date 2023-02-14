@@ -1,3 +1,8 @@
+<?php
+require "lib/fonctions.php";
+isLogged(); 
+?>
+
 <?php if(isset($user)) :?>
     <h1 class="mb-4">Mettre à jour un profil user</h1>
 <?php else : ?>

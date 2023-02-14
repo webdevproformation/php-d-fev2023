@@ -3,6 +3,8 @@
 session_start();
 $erreurs = [];
 require "base-de-donnee.php";
+require "fonctions.php";
+isLogged(); 
 
 if(
     empty($_POST["nom"]) || 

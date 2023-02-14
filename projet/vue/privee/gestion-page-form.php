@@ -1,3 +1,8 @@
+<?php
+require "lib/fonctions.php";
+isLogged(); 
+?>
+
 <h1>Créer une page</h1>
 <section class="row">
     <div class="col-3">

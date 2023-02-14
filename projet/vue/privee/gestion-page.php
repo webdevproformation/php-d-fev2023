@@ -1,4 +1,7 @@
-<?php 
+<?php
+    require "lib/fonctions.php";
+    isLogged();
+
     $sth = $connexion->prepare("
     SELECT id, titre , contenu,slug, image, auteur, DATE_FORMAT(dt_creation , '%d/%m/%Y') AS `dt_creation`  FROM pages ;
     ");
