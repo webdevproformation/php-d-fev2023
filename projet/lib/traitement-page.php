@@ -10,6 +10,7 @@ $erreurs = [];
 // connexion à la base de données
 require "base-de-donnee.php" ;
 require "fonctions.php";
+require "const.php";
 isLogged(); 
 
 // vérifier que tous les champs sont remplis => erreur 
@@ -73,7 +74,7 @@ if(count($erreurs) === 0){
         "info" => $erreurs
     ];
 }
-header("Location: http://localhost/php-initiation/projet/index.php?page=page&partie=privee");
+header("Location: " . WWW . "?page=page&partie=privee");
 exit ;
 // INSERT en base de données 
 

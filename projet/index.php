@@ -2,11 +2,9 @@
 session_start(); // étant donné formulaire + authentification => prépare le terrain
 
 // le nom de domaine de ton projet 
-define("WWW","http://localhost/php-initiation/projet/index.php");
-
 // appeler la base de données 
 require "lib/base-de-donnee.php";
-
+require "lib/const.php";
 
 ?>
 <!DOCTYPE html>
