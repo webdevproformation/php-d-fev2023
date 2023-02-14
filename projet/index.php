@@ -126,7 +126,25 @@ require "lib/base-de-donnee.php";
 
             <?php elseif(!empty($_GET["action"]) && $_GET["action"] == "delete" ) : ?>
                 <!-- suppression -->
+                <?php 
+                    $sth = $connexion->prepare("
+                        DELETE FROM pages WHERE id = :id
+                    ");
+                    $sth->execute(["id" => $_GET["id"]]);
+                    header("Location: ". WWW . "?page=page&partie=privee");
+                    exit ; 
+                ?>
+
             <?php elseif(!empty($_GET["action"]) && $_GET["action"] == "update" ) : ?>
+
+                <?php 
+                    $sth = $connexion->prepare("
+                        SELECT * FROM pages WHERE id = :id
+                    ");
+                    $sth->execute(["id" => $_GET["id"]]);
+                    $page = $sth->fetch();
+                ?>
+                <?php require "vue/privee/gestion-page-form.php" ?>
 
             <?php else : ?>
                 <?php require "vue/privee/gestion-page.php" ?>
