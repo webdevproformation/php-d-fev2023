@@ -1,0 +1,28 @@
+index.php?page=....
+
+=> contient le php + doctype + menu + router + footer
+
+
+router si dans l'url page=login => charger le fichier vue/public/login.php => formulaire 
+
+
+
+index.php?page=....
+
+=> contient le php + router  
+
+
+router si dans l'url page=login => charger le fichier vue/public/login.php 
+require "header.php"
+=> formulaire 
+require "footer.php"
+
+header.php = doctype + menu 
+footer.php = footer
+
+
+index.php 
+
+index.php?page=recette&id=1
+
+SELECT * FROM recettes WHERE id = :id ;
