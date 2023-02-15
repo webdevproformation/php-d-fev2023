@@ -20,7 +20,7 @@ dans la partie privée vous avec les pages suivantes :
 - une section commentaire dans laquelle on affiche l'ensemble des commentaires saisis dans la page contact de la partie publique 
 
 
-au niveau base de données vous avez 3 tables 
+au niveau base de données vous avez 4 tables 
 
 table page qui contient les colonnes suivantes 
 TABLE pages 

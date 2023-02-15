@@ -26,3 +26,89 @@ index.php
 index.php?page=recette&id=1
 
 SELECT * FROM recettes WHERE id = :id ;
+
+INSERT INTO table  
+(nom, prix, dte)
+-- ne pas mettre id clé primaire 
+-- 3 colonnes
+VALUES 
+('[valeur1]','[valeur2]', '[valeur3]');
+-- 3 valeurs AVEC le bon type 
+
+$chiffre = 50 ;
+
+$chiffre <= 65000
+
+<form>
+    <div class="row">
+        <textarea class="col-9"></textarea>
+    </div>
+    input text date hidden 
+    select 
+    texteare 
+
+</form>
+
+il ne faut pas confondre :
+
+base de données / table 
+
+les supers globales => tableaux complètement autonomes par rapport aux tables de la base de données 
+
+CREATE TABLE IF NOT EXISTS users(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    password VARCHAR(255)
+) 
+
+index.php?adresse=75 rue de Paris&ville=Marseille
+
+$_GET = [
+    "adresse" => "75 rue de Paris",
+    "ville" => "Marseille"
+]
+
+<form method="POST">
+    <input type="hidden" name="id" value="10">
+    <input type="text" name="login" value="login">
+</form>
+
+$_POST = [
+    "id" => "10",
+    "login" => "login"
+]
+
+session_start();
+
+$_SESSION = []
+
+// ajouter une info dans la session_start
+
+$st = $connexion->prepare("SELECT * FROM users WHERE id = 1");
+$st->execute()
+$user = $st->fetch();
+
+$user = ["nom" => "alain" , "age" => 22];
+
+$_SESSION["user"] = $user ;
+
+<form method="POST" action="appeler/fichier.php">
+    <input type="hidden" name="id" >
+    <input type="text" name="login" >
+    <input type="submit" >
+</form>
+
+TABLE
+test
+id   nom   date 
+1    a     2023-01-02
+2    b     2023-02-02
+
+SELECT * FROM test 
+
+$recette = [
+    [ "nom" => "lasagne" ]
+]
+
+$recette[0]["nom"]
+
+`premier prix`

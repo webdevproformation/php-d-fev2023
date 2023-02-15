@@ -1,6 +1,7 @@
 <?php
 session_start();
 ?>
+<!-- http://localhost/php-initiation/jour8/gestion-utilisateur/form.php  -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
