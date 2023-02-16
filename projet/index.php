@@ -85,6 +85,7 @@ require "lib/const.php";
                 $_GET["partie"] === "privee") : ?>
 
             <?php if(!empty($_GET["action"]) && $_GET["action"] == "add" ) : ?>
+                
                 <?php require "vue/privee/gestion-user-form.php" ?>
 
             <?php elseif(!empty($_GET["action"]) && $_GET["action"] == "delete" ) : ?>
