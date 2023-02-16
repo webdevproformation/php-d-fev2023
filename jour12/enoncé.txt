@@ -18,6 +18,7 @@ dans la partie privée vous avec les pages suivantes :
 - une section gestion de pages pour créer la page mention légale 
 - une section gestion des recettes qui permet de réaliser un CRUD sur les recettes de cuisines 
 - une section commentaire dans laquelle on affiche l'ensemble des commentaires saisis dans la page contact de la partie publique 
+- une section gestion des profils users qui permet de réaliser un CRUD sur les profils utilisateurs 
 
 
 au niveau base de données vous avez 4 tables 

@@ -159,3 +159,4 @@ require "lib/const.php";
     </footer>
 </body>
 </html>
+<!-- http://localhost/php-initiation/projet/index.php  -->

@@ -58,7 +58,7 @@ if(count($erreurs) === 0){
         $sth = $connexion->prepare("
             INSERT INTO users 
             (nom , email , password , dt_creation , status)
-            VALUES
+            VALUES 
             (:nom , :email , MD5(:password) , NOW() , :actif)
         ");
         // MD5() fonction de hashage de MySQL => permet de hasher le mot de passe dans la base 
