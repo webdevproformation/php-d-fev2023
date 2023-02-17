@@ -14,4 +14,8 @@
         class="list-group-item">
         Gestion des profils utilisateurs
     </a>
+    <a href="<?php echo WWW ?>?page=contacts&partie=privee" 
+        class="list-group-item">
+        Les messages du form contact
+    </a>
 </div>

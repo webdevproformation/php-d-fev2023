@@ -27,6 +27,9 @@ require "lib/const.php";
                 <li class="nav-item">
                     <a href="index.php?page=presentation" class="nav-link">Présentation</a>
                 </li>
+                <li class="nav-item">
+                    <a href="index.php?page=contact" class="nav-link">Nous contacter</a>
+                </li>
             </ul>
 
             <ul class="navbar-nav ms-auto">
@@ -59,6 +62,9 @@ require "lib/const.php";
 
         <?php elseif( !empty($_GET["page"]) && $_GET["page"] === "mention" ) : ?>
             <?php require "vue/public/mention-legale.php" ?>
+        
+            <?php elseif( !empty($_GET["page"]) && $_GET["page"] === "contact" ) : ?>
+            <?php require "vue/public/contact.php" ?>
 
         <?php elseif( !empty($_GET["page"]) && $_GET["page"] === "logout" ) : ?>
             <!-- gérer la déconnexion --> 
@@ -148,6 +154,11 @@ require "lib/const.php";
             <?php else : ?>
                 <?php require "vue/privee/gestion-page.php" ?>
             <?php endif ?>
+
+        <?php elseif( !empty($_GET["page"]) && !empty($_GET["partie"]) && 
+                $_GET["page"] === "contacts" && 
+                $_GET["partie"] === "privee") : ?>
+                <?php require "vue/privee/gestion-contact.php" ?>
 
         <!-- fin partie privée -->
         <?php else : ?>

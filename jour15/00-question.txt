@@ -1,0 +1,25 @@
+git push 
+warning .... LF   .... replaced   .... CRLF
+
+git pull 
+
+=> Linus Torvald => linux (git utilise les normes de linux)
+
+saut de ligne sur windows n'est pas le même symbole que celui pour linux 
+
+
+une base de données projet /
+
+ 2 tables (structures ) / quelques lignes 
+
+
+DROP DATABASE projet ;
+
+créer la base de données ; 
+
+CREATE DATABASE 
+
+
+pma_.... => phpMyAdmin
+
+:NOW()
