@@ -38,3 +38,10 @@ $sth->execute(["nom" => "Céline"]);
 
 $sth = $connexion->prepare("DELETE FROM etudiants WHERE age <= :age");
 $sth->execute(["age" => 25]);
+
+// XAMPP
+// php et mysql
+// phpMyadmin
+// créer une base avec encodage utf8mb4_general_ci
+// créer une table => id ...
+// INSERT des lignes dans ta table 

@@ -156,7 +156,7 @@ require "lib/const.php";
             <?php endif ?>
 
         <?php elseif( !empty($_GET["page"]) && !empty($_GET["partie"]) && 
-                $_GET["page"] === "contacts" && 
+                $_GET["page"] === "contact-management" && 
                 $_GET["partie"] === "privee") : ?>
                 <?php require "vue/privee/gestion-contact.php" ?>
 
